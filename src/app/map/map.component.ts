@@ -17,12 +17,17 @@ export class MapComponent implements AfterViewInit {
 private initMap():void{
     this.map = L.map('map', {
       center: [51.225727, 4.400853],
-      zoom: 3
+      zoom:17 // dit is de basis-uitvergroting die je te zien krijgt
     })
   const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
-    maxZoom:19,
+    maxZoom: 22, // bepaald de mate dat je kan inzoomen
+    tileSize: 512,
+    zoomOffset: -1,
     attribution:'&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
   });
     tiles.addTo(this.map);
+   const marker = L.marker([51.225727, 4.400853]);
+  marker.bindPopup("<b>Epcon @ The Beacon</b><br>Sint-Pietersvliet 7, 2000 Antwerpen.").openPopup();
+  marker.addTo(this.map);
 }
 }
