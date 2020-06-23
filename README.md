@@ -5,8 +5,7 @@ Angular
 By Chris Engelsma
 
 PostedOctober 19, 2019 33.9kviews
-While this tutorial has content that we believe is of great benefit to our community, we have not yet tested or edited it to ensure you have an error-free learning experience. It's on our list, and we're working on it! You can help us out by using the "report an issue" button at the bottom of the tutorial.
-
+ 
 Leaflet is an awesome JavaScript library for creating maps. It comes packed with nice features and is extremely mobile-friendly. Let’s see how we can integrate Leaflet into our Angular app.
 
 Setup
